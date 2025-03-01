@@ -2,10 +2,17 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {  // Added a stage for Checkout
+            steps {
+                git branch: 'main', url: 'https://github.com/Anushma/FlyawayAutomation.git'
+
+                // Run Maven Wrapper Commands
+                echo 'Building the Project with maven compile'
+            }
+        }
+
         stage('Build') {
             steps {
-                git 'https://github.com/Anushma/FlyawayAutomation.git'
-
                 // Run Maven Wrapper Commands
                 echo 'Building the Project with maven compile'
             }
