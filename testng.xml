@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteName">
+    <test name="TestName">
+        <classes>
+            <class name="com.simplilearn.FlyAwayAppAutomation.LoginTest"/>
+            <class name="com.simplilearn.FlyAwayAppAutomation.RegisterTest"/>
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+</suite>
+
+
